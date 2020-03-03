@@ -1,0 +1,18 @@
+
+                <a 
+                style="cursor: pointer;"
+               [routerLink]="[index]" 
+                routerLinkActive="active"
+                 class="list-group-item clearfix ">
+               <!--  <p> here [routerLink] = index ->this component is the child component of the router /recipes/index</p>-->
+                    <div class="pull-left">
+                        <h4 class="list-group-item-heading"> {{recipeitem.name}} </h4>
+                        <p class="list-group-item-text"> {{recipeitem.description}} </p>
+                    </div>
+                    <span class="pull-right">
+                        <img 
+                       [src]="recipeitem.imagePath"
+                         alt="" class="img-responsive"
+                          style="max-height: 50px;">
+                    </span>
+                </a>
